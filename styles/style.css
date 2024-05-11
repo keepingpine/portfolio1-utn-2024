@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #b48484;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 ul a:hover {
     color: rgb(210, 105, 30);
@@ -29,3 +30,8 @@ header img:first-child {
     height: 50px;
     margin-left: 10px; 
 }
+
+
+
+
+
