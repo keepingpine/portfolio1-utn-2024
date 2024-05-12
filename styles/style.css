@@ -5,22 +5,28 @@
 }
 
 :root {
-    --primary_color: rgb(193, 218, 211);
-    --secondary_color: rgb(224, 200, 182);  
-    --titles_font: 'Gochi Hand', cursive; 
-    --texts_font: 'Over the Rainbow', cursive;
-    --header_font: 'Zeyada', cursive;
+    --primary_color: rgb(219, 221, 200);
+    --secondary_color: rgb(229, 235, 183);  
+    --titles_font: "Chakra Petch", sans-serif;
+    --texts_font: "Amaranth", sans-serif;
+    --header_font: "Outfit", sans-serif;   
+}
+
+h1 {
+    font-family: var(--titles_font);
+    font-size: 55px;
 }
 
 h2 {
     font-family: var(--titles_font);
+    font-size: 40px;    
 }
 
 h4 {
-    font-family: var(--texts_font);
-    text-align: ;
+    font-family:"Outfit", sans-serif;
+    text-align:center ;
 }
-
+    
 hr {
     border: 1/2px solid rgb(2, 2, 2);
 }
@@ -46,11 +52,11 @@ header nav ul {
 header nav ul a {
     text-decoration: none;
     font-family: var(--header_font);
-
+    font-size: 20px;
 }
 
 header nav ul a:hover {
-    color: var(--secondary_color);
+    color: black;
     transform: translateY(-10px);
 }
 
@@ -71,7 +77,7 @@ section {
     border-radius: 5px;
 }
 
-section h2 {
+section h2,h1 {
     text-align: center;
 }
 
@@ -83,6 +89,15 @@ section h2 {
     padding: 10px;  
     width: 100%; 
 }
+
+.vertical_aligned p {
+    font-family:"Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
 
 .vertical_aligned_container {
     display: flex;
@@ -96,7 +111,7 @@ section h2 {
 
 #banner div p{
     font-size: x-large;    
-    text-align: right;
+    text-align: left;
 }
 
 #techniques .card {
@@ -131,24 +146,43 @@ section h2 {
   text-align: center;
 }
 
-#products .container_grid_products {
+#products .container_grid_products {  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 60px;
   padding: 30px;
-  margin-top: 20vh;
+  margin-top: 10vh;
   
 }
 
 #products .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 20px;
   border: 1px solid rgb(230, 230, 230);
   box-shadow: 21px 18px 29px 0px rgba(0,0,0,0.8);
   border-radius: 10px;
   transition: 0.3s transform;
-  min-height: 400px; 
-  background-color: var(--secondary_color);
+  max-height: 495px;
+  min-width: 500px; 
+  background-color: var(--secondary_color); 
+  gap: 20px;
 }
+
+#products .card img {    
+    margin-bottom: 50px;
+    min-height: 250px;
+    max-width: 380px;
+}
+
+#products .card img {    
+    margin-bottom: 50px;
+    min-height: 250px;
+}
+
+
 
 #products button:hover {
     transform: translateY(-2px);
@@ -156,6 +190,12 @@ section h2 {
 
 #products button {
     align-items: center;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: var(--primary_color);
+    margin-top: 22px;
+    
 }
 
 form {
@@ -204,30 +244,30 @@ textarea {
     position: fixed;
     bottom: 1%;
     right: 1%;
-    width: 100px; /* Ajusta el ancho según tus necesidades */
+    width: 100px; 
     height: auto; /* Para mantener la proporción de la imagen */
     z-index: 999; /* Ajusta el valor del z-index según sea necesario */
 }
 
 .whatsapp-link {
     cursor: pointer; 
-    display: inline-block;
+    display: inline-block; 
 }
-
-.whatsapp_link:hover .whatsapp_image {
-    opacity: 0.8; 
-}
-
 
 .corner-image {
     position: absolute;
-    width: 200px; /* Ajusta el tamaño según sea necesario */
+    width: 300px; /* Ajusta el tamaño según sea necesario */
     height: auto; /* Para mantener la proporción */
 }
 
 .top-right {
-    top: 65%;
-    right: 10%;
+    top: 68%;
+    right: 20%;
+}
+
+.top {
+    top: 70%;   
+    right: 8%;
 }
 
 .separator {
@@ -236,6 +276,8 @@ textarea {
     border-right: 100vw solid transparent;
     border-bottom: 13.9vw solid var(--secondary_color);
     margin-top: -13.9vw;
+    
+
 }
 
 .footer_card {
@@ -252,6 +294,15 @@ textarea {
     transform: translateY(-3px);
     pointer-events: painted;
 }
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--texts_font);
+
+}
+
+
 
 
 
