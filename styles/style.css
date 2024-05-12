@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary_color: rgb(165, 212, 224);
-    --secondary_color: rgb(210, 105, 30);  
+    --primary_color: rgb(207, 223, 223);
+    --secondary_color: rgb(211, 172, 144);  
     --titles_font: 'Gochi Hand', cursive; 
     --texts_font: 'Over the Rainbow', cursive;
     --header_font: 'Zeyada', cursive;
@@ -19,17 +19,13 @@ p {
     font-family: var(--texts_font);
 }
 
-
-
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
     padding: 20px;
     background-color: var(--primary_color);
-    
-
+    border-radius: 5px;
 }
 header nav ul {
     display: flex;
@@ -55,9 +51,16 @@ header img:first-child {
     margin-left: 10px; 
 }
 
+body {
+    margin: 10px;
+    background-color: var(--secondary_color);
+}
+
 section {
     padding: 20px;
-    min-height: 100vh;    
+    min-height: 100vh;  
+    background-color: var(--primary_color); 
+    border-radius: 5px;
 }
 
 section h2 {
@@ -83,28 +86,89 @@ section h2 {
     font-size: x-large;    
     text-align: right;
 }
-#banner div img{
-
-    
-}
 
 #techniques .card {
-    text-align: center;
+    text-align: center;      
+    padding: 50px;
+    border: 1px solid var(--secondary_color);
+    box-shadow: 21px 18px 29px 0px rgba(0,0,0,0.8);
+    border-radius: 10px;    
+}
+
+#products .card:hover,
+#techniques .card:hover {
+    transform:  scale(1.03);
 }
 
 #techniques div.container_card{
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
     
 }
 
-#techniques .container_card img {
+#techniques .container_card img {    
+    max-width: 150px;
+    min-height: 150px;
     
-    background-color: blueviolet;
-    max-width: 100px;
-    max-height: 100px;
 }
+
+#products {
+  text-align: center;
+}
+
+#products .container_grid_products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+  margin-top: 30%;
+}
+
+#products .card {
+  padding: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: 21px 18px 29px 0px rgba(0,0,0,0.8);
+  border-radius: 10px;
+  transition: 0.3s transform;
+  min-height: 150px;
+
+}
+
+form {
+    width: 60%;
+    padding: 30px;
+    margin: auto;
+}
+
+form * {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+}
+
+form input,
+textarea {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 5px 7px rgba(0,0,0,0.24);
+  font-family: var(--titles_font);
+}
+
+#contact button {    
+    border: 1px solid var(--secondary_color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    box-shadow: 0px 6px 5px 7px rgba(0,0,0,0.24);
+    font-family: var(--titles_font);
+}
+
+
 
 
 
