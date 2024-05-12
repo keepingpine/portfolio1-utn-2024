@@ -182,8 +182,6 @@ section h2,h1 {
     min-height: 250px;
 }
 
-
-
 #products button:hover {
     transform: translateY(-2px);
 }
@@ -276,8 +274,6 @@ textarea {
     border-right: 100vw solid transparent;
     border-bottom: 13.9vw solid var(--secondary_color);
     margin-top: -13.9vw;
-    
-
 }
 
 .footer_card {
